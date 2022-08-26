@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link href="contato.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        alert("Preencha o formulario")  
+    </script>
+
+    <form class="formulario">
+        <input type="image" src="Logo-removebg-preview.png">
+        <div class="Nome">
+            <label for="Nome">Nome</label>
+            <input type="text" id="name" maxlength="20" requerid autocomplete onclick="autorize()">
+            <script>
+                function autorize() {
+                    alert("digite seu nome")
+                }
+            </script>
+
+        </div>
+        <br>
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="e-mail" maxlength="20" required autocomplete onclick="autorize2()">
+            <script>
+                function autorize2(){
+                    alert("Digite o seu melhor e-mail")
+                }
+            </script>
+        </div>
+        <br>
+        <div class="confirme">
+            <label for="email">Confirme</label>
+            <input type="email" id="e-mail" name="e-mail" maxlength="20" required autocomplete onclick="autorize3()">
+            <script>
+                function autorize3(){
+                    alert("Confirma o e-mail")
+                }
+            </script>
+        </div>
+        <br>
+        <div class="telefone">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="tel" maxlength="20" required autocomplete onclick="autorize4()">
+            <script>
+                function autorize4(){
+                    alert("Insira seu telefone pessoal.")
+                }
+            </script>
+        </div>
+        <br>
+        <div class="idade">
+            <label for="Idade">Idade</label>
+            <input type="number" name="idade" id="idade" maxlength="20" requerid autocomplete onclick="autorize5()">
+            <script>
+                function autorize5(){
+                    alert("Digite sua idade")
+                }
+            </script>
+        </div>
+        <br>
+        <div class="Nascimento">
+            <label for="Nascimento">Nascimento</label>
+            <input type="date" name="nascimento" id="Nascimento" title="Digite sua data de nascimento">
+        </div>
+        <br>
+        <div class="genero">
+            <h5>Genero</h5>
+        </div>
+        <br>
+        <div class="masculino">
+            <input type="radio" name="sexo" id="sexo" title="Masculino">
+            <label for="sexo">Masculino</label>
+            <input type="radio" name="feminino" id="feminino" title="feminino">
+            <label for="feminino">Feminino</label>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" maxlength="20" required autocomplete onclick="pizza()">
+            <script>
+                function pizza(){
+                    alert("Digite sua melhor senha.")
+                }
+            </script>
+        </div>
+        <br>
+        <button onclick="">Entrar</button>
+    </form>
+</body>
+
+</html>
